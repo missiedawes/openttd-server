@@ -38,7 +38,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/${{ env.DOCKER_IMAGE_REPO }}
+            ${{ env.DOCKER_IMAGE_REPO }}
           tags: |
             type=ref,event=branch
             type=ref,event=tag
