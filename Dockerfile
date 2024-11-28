@@ -1,5 +1,7 @@
 FROM bateau/openttd:latest AS base
 
+RUN mkdir -p /home/openttd/.openttd/save
+
 RUN ln -nfs /home/openttd/save /home/openttd/.openttd/save
 
 # install curl
