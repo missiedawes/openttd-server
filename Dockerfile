@@ -1,5 +1,7 @@
 FROM bateau/openttd:latest AS base
 
+RUN ln -nfs /home/openttd/.openttd/save /home/openttd/save
+
 # install curl
 RUN apt-get update && apt-get install -y \
     curl \
